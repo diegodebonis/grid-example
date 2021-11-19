@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Inter";
+  background: antiquewhite;
+}
+
+.box {
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333;
+  text-align: center;
+  padding: 1rem;
+}
+
+.grid-layout {
+  display: grid;
+  height: 100%;
+  grid-template-areas:
+    "navbar navbar navbar navbar"
+    "sidebar main main main"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer";
+  grid-template-rows: 5% 40% 40% 15%;
+}
+
+.navbar {
+  grid-area: navbar;
+  background: mediumaquamarine;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: mediumturquoise;
+}
+
+.main {
+  grid-area: main;
+  background: mediumspringgreen;
+}
+
+.content1 {
+  grid-area: content1;
+  background: mediumpurple;
+}
+
+.content2 {
+  grid-area: content2;
+  background: mediumorchid;
+}
+
+.content3 {
+  grid-area: content3;
+  background: mediumvioletred;
+}
+
+.footer {
+  grid-area: footer;
+  background: yellowgreen;
+}
